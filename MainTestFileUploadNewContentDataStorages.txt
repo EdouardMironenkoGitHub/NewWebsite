@@ -231,7 +231,7 @@ Your browser does not support the video tag.</source>
 
 </div>
 <div>
-<a href="./PostJobHTMLLinkPage.html" class="myButton" style = "top: 116.8vw; left:48vw; position:absolute; width:2.160vw; height: 0.8vw; font-size:1.0vw;">A</a>
+<a href="./PostJobHTMLLinkPage.html" class="myButton" style = "top: 116.8vw; left:48vw; position:absolute; width:2.160vw; height: 0.8vw; font-size:1.0vw;">Post New Jobs Online</a>
 </div>
 
 <!--<div style = "width:16.80vw; height:6vw; left:16%; top:20%; position:absolute;">Post a Job</div>-->
