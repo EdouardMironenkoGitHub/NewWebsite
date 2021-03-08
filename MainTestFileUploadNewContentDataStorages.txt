@@ -3,7 +3,7 @@
 <head>
 <!--THERE COULD BE A LOT OF ERRORS HERE THEN!-->
 <!--<link rel="stylesheet" type="text/css"  href="./bulma-0.9.1/bulma/css/bulma.css">-->
-<link rel = "stylesheet"  type = "text/css"  href = "./CSSStylesheets/cssstylesheet.css">
+<!--<link rel = "stylesheet"  type = "text/css"  href = "./CSSStylesheets/cssstylesheet.css">-->
 <!---->
 
 <!--<link rel=  "preload"  href="./LayoutInflator/PaletteComponentMainFile.txt" as="object"></link> -->
@@ -76,7 +76,7 @@ console.log("iteration performed!");
 <!-- code taken from the following website and modified if any copyright issues arise please email edouard.mironenko@gmail.com -->
 
 							
-<body>
+<!--<body>-->
 
 
 
@@ -600,7 +600,7 @@ Your browser does not support the video tag.</source>--><!--video/mov-->
 
 
 
-</body>
+<!--</body>--><!---->
 <!--<iframe></iframe>-->
 
 <!--Some images/videos have been taken from the same website as some others therefore some links have been omitted but it is from the same websites:
