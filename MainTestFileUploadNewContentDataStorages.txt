@@ -1,0 +1,968 @@
+
+<html>
+<head>
+<!--THERE COULD BE A LOT OF ERRORS HERE THEN!-->
+<!--<link rel="stylesheet" type="text/css"  href="./bulma-0.9.1/bulma/css/bulma.css">-->
+<link rel = "stylesheet"  type = "text/css"  href = "./CSSStylesheets/cssstylesheet.css">
+<!---->
+
+<!--<link rel=  "preload"  href="./LayoutInflator/PaletteComponentMainFile.txt" as="object"></link> -->
+
+<style></style>
+
+
+<script>
+
+var SelectedSlide = 1; 
+
+window.addEventListener('DOMContentLoaded', (event) =>{
+ShowAllSelectedSlides(SelectedSlide); 
+
+//
+
+
+});
+
+
+
+function AdjustTheSelectedSlides( number){
+ShowAllSelectedSlides(SelectedSlide += number);
+}
+function SelectedSlidesFunctionDefinition(number){
+
+ShowAllSelectedSlides(SelectedSlide = number);
+}
+
+function ShowAllSelectedSlides(number) {
+
+var index; 
+var SlideshowSlides = document.getElementsByClassName("slideshowslidesobject");
+var SlideshowDots = document.getElementsByClassName("slideshowdotelement");
+
+if (number > SlideshowSlides.length) {
+
+SelectedSlide = 1
+
+}
+
+if (number<1) { SelectedSlide = SlideshowSlides.length}
+
+for (index = 0; index < SlideshowSlides.length; index++){
+
+
+SlideshowSlides[index].style.display = "none";
+
+console.log("iteration performed!");  /*My own line then */
+}
+
+for(index = 0; index<SlideshowDots.length; index++){
+
+SlideshowDots[index].className = SlideshowDots[index].className.replace("SlideShowActiveElement","");
+}
+
+SlideshowSlides[SelectedSlide-1].style.display = "block";
+//SlideshowDots[SelectedSlide-1].className += " SlideShowActiveElement"; 
+
+console.log("iteration performed!");
+
+}
+
+</script>
+
+
+ 
+</head>
+
+<!-- code taken from the following website and modified if any copyright issues arise please email edouard.mironenko@gmail.com -->
+
+							
+<body>
+
+
+
+
+
+
+
+
+
+
+
+<!--Header Content Listed Then -->
+
+
+<img src = "64cc09ff-6b42-4080-b868-fff488eb2100_200x200.png" style = "top:0.0vw; left:2vw; width:10vw; height:10vw; position:absolute;"> </img>
+
+
+<!--<div class="topnav" style= "width: 66.10vw; height: 4.0vw; opacity: 0.0; left:32.80vw; top:4.0vw; font-family:Red Hat Display, sans-serif; background-color:white; font-color:black; opacity:0.90; background-color: white;"> 
+  <a class="active" href="#home" style="  opacity: 1.0 ; font-size: 2.0vw; font-color:black;">What is on offer?</a>
+  <a href="./PostJobHTMLLinkPage.html" class = "fullvisible" style="  opacity: 1.0 ;font-size: 2.0vw;">Post a job</a>
+  <a href="./HireATradesmanLinkHTMLLinkPage.html" class = "fullvisible" style="  opacity: 1.0 ;font-size: 2.0vw;">Find a job</a>
+  <a id ="loginbuttonheadingtop"           class = "fullvisible" style="  opacity: 1.0 ;font-size: 2.0vw;"   onclick = "changeloginstatusmethod()"       >Login</a>-->
+  <!--<a href="#contactus" class = "fullvisible" style = "opacity:1.0; font-size:2vw;">Contact Us</a> -->
+
+<!--</div>-->
+
+
+
+
+
+
+
+<!--Slideshow Element-->
+
+
+
+
+
+<div class = "SlidesShowContainerObject" style = "width: 98.8vw; height:40.00vw; top:8.0vw; left:0.0vw;">
+
+<div  class =  "slideshowslidesobject  slideshowelementfade"  style = "display:block;">
+<div class = "NumberTextSlideShow" ></div>
+<img src = "./New folder/house-3123525_1920.jpg"  style = "width:98.8vw; height:48.80vw; position:absolute;"> <!--house-3123525_1920--></img>
+<div class = "TextElementSlideShow"></div >
+</div>
+
+
+
+<div  class =  "slideshowslidesobject slideshowelementfade"  style = "display:block;">
+<div class = "NumberTextSlideShow" ></div>
+<img src = "New folder/new-home-1664252_1920.jpg"  style = "width:98.8vw; height:48.80vw; position:absolute;"> <!--house-3123525_1920.jpg--> <!--new-home-1664252_1920--></img>
+<div class = "TextElementSlideShow"></div >
+</div >
+
+
+
+
+<div  class =  "slideshowslidesobject slideshowelementfade"  style = "display:block;">
+<div class = "NumberTextSlideShow" ></div>
+<img src = "New folder/new-home-1664272_1920.jpg"  style = "width:98.8vw; height:48.80vw; position:absolute;"></img>
+<div class = "TextElementSlideShow"></div > <!--new-home-1664272_1920--> <!--house-3123525_1920.jpg-->
+</div >
+
+
+
+<div  class =  "slideshowslidesobject slideshowelementfade"  style = "display:block;">
+<div class = "NumberTextSlideShow" ></div>
+<img src = "New folder/new-home-1664284_1920.jpg"  style = "width:98.8vw; height:48.80vw; position:absolute;"> <!-- house-3123525_1920.jpg--><!--new-home-1664284_1920--></img>
+<div class = "TextElementSlideShow"></div >
+</div >
+
+
+
+<div  class =  "slideshowslidesobject SlideShowElementfade"  style = "display:block;">
+<div class = "NumberTextSlideShow" ></div>
+<img src = "New folder/new-home-1664302_1920.jpg"  style = "width:98.8vw; height:48.80vw; position:absolute;"><!--new-home-1664302_1920--><!--house-3123525_1920.jpg--></img>
+<div class = "TextElementSlideShow"></div >
+</div>
+
+
+
+<div  class =  "slideshowslidesobject slideshowelementfade"  style = "display:block;">
+<div class = "NumberTextSlideShow" ></div>
+<img src = "New folder/new-home-1664325_1920.jpg"  style = "width:98.8vw; height:48.80vw; position:absolute;"> <!-- house-3123525_1920.jpg--> <!--new-home-1664325_1920.--> <!--new-home-1664325_1920--></img>
+<div class = "TextElementSlideShow"></div >
+</div >
+
+
+
+<div  class =  "slideshowslidesobject slideshowelementfade"  style = "display:block;">
+<div class = "NumberTextSlideShow" ></div>
+<img src = "New folder/new-home-1682323_1920.jpg"  style = "width:98.8vw; height:48.80vw; position:absolute;"><!--new-home-1682323_1920--> <!--house-3123525_1920.jpg--></img>
+<div class = "TextElementSlideShow"></div >
+</div >
+
+
+<div  class =  "slideshowslidesobject slideshowelementfade"      style = "display:block;">
+<div class = "NumberTextSlideShow" ></div>
+<img src = "New folder/new-home-2897352_1920.jpg" style = "width:98.8vw; height:48.80vw; position:absolute;">  <!-- house-3123525_1920.jpg--><!--new-home-2897352_1920.jpg--><!--new-home-2897352_1920--></img>
+<div class = "TextElementSlideShow"></div >
+</div >
+
+
+
+
+
+<a class = "PreviousButtonMovementArrows" onclick = "AdjustTheSelectedSlides(-1)" text= "" >&lt; </a>
+<a class = "NextButtonMovementArrows" onclick = "AdjustTheSelectedSlides(1)" text= "">&gt;  </a>
+
+</div>
+
+<!-- Message Pane!-->
+
+
+
+
+
+<div style = "width:80vw; left:10vw; height:20vw;top:60.80vw;position:absolute; background-color:white; "><a style ="left:8vw;top:4vw; font-size:2.0vw;  position:absolute;  ">We offer a platform for people to post jobs and complete jobs and earn as freelance tradesman. </a></div>
+
+<!-- Main Page Content Listed -->
+
+
+
+<!-- Slide 1 on the page-->
+
+<div style="top:40vw; position:absolute">
+
+
+<div style = "color:black; font-family: 'Red Hat Display', sans-serif; font-size:10vw; position:absolute; top:40vw; left:10vw; width: 80vw; height:20vw"> Post a new job !</div>
+
+
+<script>
+//window.location.replace("http:www.example.com");
+</script>
+
+<div style = "width: 80vw; height:60vw; left: 0vw; top: 56vw; opacity: 1.0; background-color: #EBEBEB; position:absolute;"></div><!--blue-->
+
+<video style= "width:60vw;height:48vw; position:absolute; left:10vw; top:50vw; " controls  preload = "auto">
+
+  <source src="Time_Lapse_House_Clouds_1B.mp4" type="video/mp4">
+Your browser does not support the video tag.</source>
+</video>
+
+<div style = "background-color:white; width:80vw;height:24vw;top:100vw; left:0vw;position:absolute;"></div>
+
+<div  style =  "width: 40vw; height: 256vw; top:102vw; left: 10vw; position:absolute; font-size:2vw;"><a>Looking to get your house fixed? </a> 
+
+
+<p  style = "width:64.8vw; height:100%; color:black; font-family: 'Red Hat Display', sans-serif; font-size:1.6vw;"> If you are a homeowner and you require somework done it is easy and quick to post your job online we have over 100,000 people working for the business and we are ready to provide you with the best possible expertise so that you can contact these people directly and get the house work done very quickly. Do not forget to view feedback from some of our excellenet freelancers and contracters.   Attribution: Stock footage provided by darkdoug4u2, downloaded from www.videvo.net         </p>
+
+
+
+</div>
+<div>
+<a href="./PostJobHTMLLinkPage.html" class="myButton" style = "top: 116.8vw; left:48vw; position:absolute; width:2.160vw; height: 0.8vw; font-size:1.0vw;">A</a>
+</div>
+
+<!--<div style = "width:16.80vw; height:6vw; left:16%; top:20%; position:absolute;">Post a Job</div>-->
+
+
+<!--<video width = "1000vw;" height= "1000vw;"  style= "position:absolute; left:20vw; top:80vw; font-size:2vw">
+-->
+
+
+<!-- <source src="https://drive.google.com/uc?export=view&id=1Hf0fAVtLsWuyJnqOpg-aDSyTbmbw48fi" type="video/mp4">
+Your browser does not support the video tag.</source>
+</video>-->
+
+<!--<source src="Drilling Nails into Wood Plank.mp4" type="video/mp4">
+Your browser does not support the video tag.</source>
+</video>-->
+
+</div>
+
+
+<!-- Slide 2 on the page-->
+<div style = "top:60vw; position:absolute;">
+
+
+<div style = "color:black; font-family: 'Red Hat Display', sans-serif; font-size:10vw; position:absolute; top:108.80vw; left:10vw; width:88vw; height:20vw"> Hire a tradesman now really quickly!</div>
+
+<div style = "width: 88.9vw; height:40vw; left:10vw; top: 148vw; opacity: 1.0; background-color: #EBEBEB; position:absolute;"></div>
+
+<video    style= " width:60vw;height:36vw;position:absolute; left:20vw; top:148.8vw; " controls  >
+<source src="200312_pl_01_4k_031.mp4" type="video/mp4">
+Your browser does not support the video tag.</source>
+</video>
+
+
+
+
+<div  style = " width: 88.9vw; height :28vw;top: 188vw; left:10vw; background-color:white; position:absolute;"></div>
+
+
+
+<a href="./HireATradesmanLinkHTMLLinkPage.html" class="myButton" style = "top:208.8vw; left:48vw; position:absolute; width:28vw; height:6vw; font-size:2vw"><div style = "width:28vw; height:6vw; left:24%; top:32%; position:absolute;">Hire a Tradesman </div></a>
+<!--52-->
+
+<!---->
+
+<!--<button class="button button2" style = "top:214vw; left: 80vw; background-color: #008CBA; width:10vw; height: 2vw; position: absolute;" >Hire</button>-->
+
+<div  style =  "width: 40vw; height: 100vw; top:190vw; left: 16vw; position:absolute; font-size:2vw;"><a>Looking to hire a local tradesman? </a> 
+
+
+<p  style = "width:64.8vw; height:12.80vw; color:black; font-family: 'Red Hat Display', sans-serif; font-size:1.6vw;"> If you are looking for some local tradesman to do the work you can send in requests to anyone from our list of renowned experts. Just type in your category find the appropriate person check the price listing and then click request and wait for a reply, people usually reach back within a few days. Once you get a quote you are all ready for the work to be done just pay the deposit and upon completion the amount requested to make the trade a complete success! Attribution: Stock footage provided by Videvo, downloaded from www.videvo.net </p>
+
+
+
+</div>          <!---->
+
+</div> 
+
+<!-- Slide 3 on the page-->
+<div style = "top:80vw;position:absolute;">
+
+
+
+<div style = "color:black; font-family: 'Red Hat Display', sans-serif; font-size:10vw; position:absolute; top:216vw; left:0.8vw; width:98vw;"> Apply as a tradesman online fast!</div>
+
+<div style = "width: 80vw; height:48vw; left:0vw; top: 240vw; opacity: 1.0; background-color: #EBEBEB; position:absolute;"></div>
+
+<video width = "480vw;" height = "320vw;" style= "position:absolute; left:10vw; top:242.8vw; width:64vw; height:34.8vw; " controls  >
+<source src="Bricklaying_1_Videvo.mov" type="video/mp4">
+Your browser does not support the video tag.</source>
+</video>
+
+<div style = "width: 80vw; height:28vw; left:0vw; top:280vw; position:absolute; background-color: white" ></div>
+
+
+<div  style =  "width: 40vw; height: 100vw; top:282vw; left: 4vw; position:absolute; font-size:2vw;"><a>Looking to apply as a tradesman? </a> 
+
+
+<p  style = "width:64.8vw; height:100%; color:black; font-family: 'Red Hat Display', sans-serif; font-size:1.6vw;"> It takes less than a few minutes, just fill in the registration form with your email address and personal detail, confirm in the email we sent you, add profile picture and you are all set to go. As you work your way through you will be earning some points that will make you much more likely to get a job guarnateed.    Attribution: Stock footage provided by Video, downloaded from www.videvo.net                                         </p>
+
+</div>          
+
+<a href="./ApplyAsATradesmanLinkHTMLLinkPage.html" class="myButton" style = "top: 294.8vw; left:48vw; position:absolute; width:28vw; height:8vw;"><div style = "width:12vw; height:32vw; left:32%;top:32%;">Apply As A Tradesman</div> </a> 
+
+
+
+</div>
+
+<!-- SLide 4 on the page -->
+<div style = "top:100vw; position:absolute;">
+
+
+<div style = "color:black; font-family: 'Red Hat Display', sans-serif; font-size:10vw; position:absolute; top:308.2vw; left:10vw; width: 80vw; height:10vw;"> Login Now!</div>
+
+<div style = "width: 88.9vw; height:40vw; left:10vw; top: 320vw; opacity: 1.0; background-color:#EBEBEB; position:absolute;"></div>
+
+<video width = "480vw" height = "320vw" style= " position:absolute; left:20vw; top:322.0vw; height:36vw; width:64vw" controls  >
+
+  <source src="Login_screen_01_Videvo.mov" type="video/mp4">
+Your browser does not support the video tag.</source>
+</video>
+
+<div style = "top: 360vw; left: 10vw; width:88.9vw; height: 20vw; position:absolute; background-color:white;"></div>
+
+<!--<div style = "top:328vw; left: 10vw; width:80vw; height:80vw; position:absolute; background-color " ></div>-->
+
+
+
+<div  style =  "width: 40vw; height: 20vw; top:360vw; left: 16vw; position:absolute; font-size:2vw;"><a>Do you have an existing account or want to register? </a> 
+
+
+<p  style = "width:64.8vw; height:100%; color:black; font-family: 'Red Hat Display', sans-serif; font-size:1.6vw;"> If you have an existing account simply click login or if you do not you can easily register with us with a new account by clicking register with us and then you can select one of the options either register as a tradesman or person posting a job. It is that simple and quick so good luck then!    Attribution: Stock footage provided by Videvo, downloaded from www.videvo.net          </p>
+
+
+
+</div>          
+
+<a href="./LoginPageHTMLLink.html" class="myButton" style = "top: 374.8vw; left:64vw; position:absolute; width:28vw: height:6vw;"><div style = "width:10vw; height:2vw; left:32%; top:32%;">Login Now!</div></a> <!---->      <!---->
+
+</div>
+
+
+<!--  Slide 5 on the page  -->
+<div style ="top:216.0vw; position:absolute;" >
+
+<div style = "color:black; font-family: 'Red Hat Display', sans-serif; font-size:10vw; position:absolute; top:264.8000vw; left:10vw; width:80vw; height:10vw;"> Contact Us!</div>
+
+<div style = "width: 80vw; height:40vw; left:0vw; top: 280vw; opacity: 1.0; background-color: #EBEBEB; position:absolute;"></div>
+
+
+<video width = "480vw" height = "320vw" style= " position:absolute; left:10vw; top:280vw; height:36vw; width: 64vw;" controls  >
+
+<source src="160812_061_Iphone9_4K.mp4" type="video/mp4">
+Your browser does not support the video tag.</source>
+</video>
+
+<div style = "background-color:white; width:80vw; height:28.8vw; top:320vw; left:0vw; position:absolute;"></div>
+
+
+<div  style =  "width: 40vw; height: 100vw; top:320vw; left: 8vw; position:absolute; font-size:2vw;"><a>Are you looking to contact us specifically relating to some issue?  </a> 
+
+
+<p  style = "width:64.8vw; height:100%; color:black; font-family: 'Red Hat Display', sans-serif; font-size:1.6vw;"> There are lots of different ways you can contact us including by email, by phone, through online forms, or even simply visting our location directly. Therefore if you would like to contact us quickly you can fill in this form regarding any kind of query you have and we will get back to you!      Attribution: Stock footage provided by Videvo, downloaded from www.videvo.net </p>
+
+
+</div>          
+
+<a href="./ContactUsHTMLLinkPage.html" class="myButton" style = "top: 336.0vw; left:56vw; position:absolute; height: 6vw ; width: 20vw"><div style = "width: 10vw; height:6vw; left:28.8%;top:32%; position:absolute;"> Contact Us!</div></a>
+
+
+</div>
+
+<!--  Slide 6 on the page -->
+<div style = "top:240vw; position:absolute;">
+
+
+<div style = "color:black; font-family: 'Red Hat Display', sans-serif; font-size:10vw; position:absolute; top:342vw; left:10vw"> Frequently asked questions section.</div>
+
+<div style = "width: 88.9vw; height:48vw; left:10vw; top:398.200vw; opacity: 1.0; background-color:#EBEBEB; position:absolute;"></div>
+
+<video width = "480vw" height = "320vw" style= " position:absolute; left:20vw; top:400vw; height: 36vw;  width:  64vw;" controls  >
+
+  <source src="Smartphone_scroll_01_Videvo.mov" type="video/mp4">
+Your browser does not support the video tag.</source>
+</video>
+
+<div style = "top: 442.8vw; left:10vw; width: 88.9vw; height: 24vw; position:absolute;background-color:white;"></div>
+
+
+<div  style =  "width: 40vw; height: 100vw; top:446vw; left: 16vw; position:absolute; font-size:2vw;"><a>Do you have a quick question? </a> 
+
+
+<p  style = "width:64.8vw; height:100%; color:black; font-family: 'Red Hat Display', sans-serif; font-size:1.6vw;"> We get lots of emails and question and some of the most useful and main question get posted with the answer on this page therfore you can scroll through our frequently asked questions sectiona where you may find the question you need. If however you still feel that there is a question that you have that we have not answered then please do get into touch and we will reply as soon as possible!        Attribution: Stock footage provided by Videvo, downloaded from www.videvo.net </p>
+
+
+</div>          
+
+<a href="./PostANewQuestionHTMLLinkPage.html" class="myButton" style = "top: 460.8vw; left:60vw;  width: 36.40vw; height: 6.800vw;position:absolute; ">Post A New Question!</a>
+
+</div>
+
+
+
+
+<!--  Slide 7 on the page-->
+<div style = "top:148.0vw; position:absolute;">
+<div style = "color:black; font-family: 'Red Hat Display', sans-serif; font-size:10vw; position:absolute; top:568vw; left:10vw">Follow Us</div>
+
+<div style = "width: 88.9vw; height:48vw; left:0vw; top: 590vw; opacity: 1.0; background-color: #EBEBEB; position:absolute;"></div>
+
+<div style = "background-color:white; top:638vw; left:0vw; width: 88.9vw; height:20vw; position:absolute;"></div>
+
+<video width = "480vw" height = "320vw" style= "position:absolute; left:10vw; top:592vw; width:64vw; height:36vw; " controls preload >
+
+  <source src="./180927_Icons_2.mov" type="video/mov">
+Your browser does not support the video tag.</source>
+</video>
+
+
+
+
+
+
+
+
+<div  style =  "width: 40vw; height: 100vw; top:638vw; left: 16vw; position:absolute; font-size:2vw;"><a>  Our business has lots of social media content so check these out! </a>
+
+
+<p  style = "width:64.8vw; height:100%; color:black; font-family: 'Red Hat Display', sans-serif; font-size:1.6vw;"> We have a wide variety of social media pages so do have a look at the following list. 
+
+Attribution: Stock footage provided by Videvo, downloaded from www.videvo.net                                                                                               </p>
+
+
+</div>          
+
+<a href="./FollowUsHTMLLinkPage.html" class="myButton" style = "top: 648.8vw; left:42vw; position:absolute;width:32.4860vw;"><div>Follow Us!</div></a>
+
+
+
+</div>
+
+
+<!--  Slide 8 on the page-->
+<div style = "top:164.80vw; position:absolute;">
+
+
+<div style = "color:black; font-family: 'Red Hat Display', sans-serif; font-size:10vw; position:absolute; top:668vw; left:10vw; height:186.420000vw; ">Pricing Guides! </div>
+
+<div style = "width: 88.9vw; height:48vw; left:10vw; top: 692vw; opacity: 1.0; background-color: #EBEBEB; position:absolute;"></div>
+
+<video width = "480vw" height = "320vw" style= " position:absolute; left:20vw; top:698.40vw; width:64vw; height:36vw;" controls  >
+
+  <source src="201027_01_Business_Scribe Comps_4k_010.mp4" type="video/mp4">
+Your browser does not support the video tag.</source>
+</video>
+
+<div style = "background-color:white;width:88.9vw;height:32.80vw;top: 742.8vw; left:10vw; position:absolute;"></div>
+
+
+<div  style =  "width: 40vw; height: 100vw; top:748.2vw; left: 16vw; position:absolute; font-size:2vw;"><a>How much do the services cost? How much do I pay for a job? </a> 
+
+
+<p  style = "width:64.8vw; height:100%; color:black; font-family: 'Red Hat Display', sans-serif; font-size:1.6vw;"> We aim to make it as inexpensive as possible. If you are a homeowner then you can set out fair prices for the tradesman to get paid. The tradesmen can then negotiate with you on any changes and a plan can be put into place easily before a trade is made. The average job result in a cost of around 2,000-4,000 pounds.
+
+Attribution: Stock footage provided by Videvo, downloaded from www.videvo.net                                                                                         
+
+
+
+
+      </p>
+</div>
+
+<a class="myButton" style = "top: 768.4vw; left:56.40vw; width: 28.0vw; height:6vw; position:absolute;" href = "./PriceListHTMLLinkPage.html"><div style = "width: 24vw; height:8vw; position:absolute; left:16%; up:32%">View average price list</div></a> 
+
+
+</div>
+
+
+
+
+
+
+<!--Slide 9  -->
+<div style = "top:200.800vw; position:absolute;">
+
+<div style = "color:black; font-family: 'Red Hat Display', sans-serif; font-size:10vw; position:absolute; top:740vw; left:10vw; height:186.420000vw; ">Subscribe to our newsletter! </div>
+
+<video width = "480vw" height = "320vw" style= " position:absolute; left:20vw; top:778.40vw; width:64vw; height:36vw;" controls  > <!--src = "./180927_Icons_2.mov"--> <!---->
+
+<!--  <source src="./180927_Icons_2.mov" type="video/quicktime" >  
+Your browser does not support the video tag.</source>  --> <!--video/mov-->
+</video>
+
+
+<!--<object height="350" width="425">
+<param name="movie" value="./180927_Icons_2.mov">
+<param name="wmode" value="transparent">
+<embed height="350" src="./180927_Icons_2.mov" type="application/x-shockwave-flash" width="425" wmode="transparent">
+</object>-->
+
+<!--<embed src="./180927_Icons_2.mov" width="320" height="252" 
+autoplay="true" controller="true" loop="false" 
+pluginspage="http://www.apple.com/quicktime/"></embed>-->
+
+
+<!--<object 
+ width="160" height="136"
+ codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+   <param name="src" VALUE="./180927_Icons_2.mov"/>
+   <param name="autoplay" VALUE="true"/>
+   <param name="loop" VALUE="true"/>
+   <param name="controller" value="true"/>
+<embed src="./180927_Icons_2.mov" width="160" height="136"
+  scale="tofit"
+  controller="true"
+  autoplay="true"
+  loop="true"
+  pluginspage="http://www.apple.com/quicktime/download/"/>
+</object>--> <!--classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B"-->
+
+
+<div style = "background-color:white;width:88.9vw;height:32.80vw;top: 842.8vw; left:10vw; position:absolute;"></div>
+
+<a href="./SubscribeLinkHTMLLinkPage.html" class="myButton" style = "top: 840.800vw; left:42vw; position:absolute;width:32.4860vw;"><div>Subsribe to our newsletter! </div></a> <!---->
+
+<!--<a href="./FollowUsHTMLLinkPage.html" class="myButton" style = "top: 738.8vw; left:42vw; position:absolute;width:32.4860vw;"><div>Subsribe to our newsletter! </div></a> -->
+
+
+
+<div  style =  "width: 40vw; height: 100%; top:820.0vw; left: 16vw; position:absolute; font-size:2vw; font-family: 'Red Hat Display', sans-serif; ">
+
+<a style= "font-family: 'Red Hat Display', sans-serif; font-size:2.0vw;">Interested in any newsletters? Then subscribe! </a> 
+
+
+<p style = "width:64.8vw; height:10vw; color:black; font-family: 'Red Hat Display', sans-serif; top: 820.8vw; font-size:1.6vw;">
+
+We provide a newsletter on weekly basis if you are interested! 
+You can subscribe to other content as well check out out subscription section of our website for more information on email, letter, phone and also message notification subscriptions and please do recommend this website to other people so that they can get the opportunity to subscribe as well to our newsletter and notifcations!  
+
+Attribution: Stock footage provided by Videvo, downloaded from www.videvo.net .                                                                                        
+
+</p>
+</div>
+
+
+
+<!--<p>https://www.videvo.net/video/tracking-in-stock-market-charts-on-laptop-and-desk-at-night/514520/</p>-->
+</div><!---->
+
+<!--Slide 10 -->
+
+<div style = "top:264.80vw; position:absolute;">
+<div style = "color:black; font-family: 'Red Hat Display', sans-serif; font-size:10vw; position:absolute; top:808.0vw; left:10vw; height:16.80vw; ">Blog! </div> <!---->
+
+
+<video width = "480vw" height = "320vw" style= " position:absolute; left:20vw; top:820.40vw; width:64vw; height:36vw;" controls  > <!--src = "./180927_Icons_2.mov"--> <!---->
+
+  <!--<source src="./180927_Icons_2.mov"  autoplay type="video/quicktime"> 
+Your browser does not support the video tag.</source>--><!--video/mov-->
+</video>
+
+<div style = "background-color:white;width:88.9vw;height:32.80vw;top: 882.8vw; left:10vw; position:absolute;"></div>
+
+<div style = "position:absolute; top:842.8vw; width:40vw;font-size:2vw;">
+
+
+<a style = "position:absolute; top:20vw; left:20vw;font-size:2.0vw;">Read our weekly blog!</a>
+
+
+<p style = "width:64.8vw; color:black; font-family: 'Red Hat Display' ,sans-serif; top:22.8vw; left:20vw; position:absolute; height:48.00vw; font-size:1.6vw;"> Attribution: Stock footage provided by Videvo, downloaded from www.videvo.net                                                                                         
+
+
+
+
+
+</p>
+
+</div>
+
+
+<a href="./BlogPageHTMLLinkPage.html" class="myButton" style = "top: 876.8vw; left:42vw; position:absolute;width:32.8400vw;font-size:1.0vw;"><div>Blog! </div></a>
+</div><!---->
+
+<!--Actual Footer Section Listed -->
+<!---->
+
+
+
+</body>
+<!--<iframe></iframe>-->
+
+<!--Some images/videos have been taken from the same website as some others therefore some links have been omitted but it is from the same websites:
+
+1)  https://www.videvo.net/
+2) https://pixabay.com/
+
+But this is only a demo and not yet for sale! Demonstration and editorial purposes only! 
+-->
+
+
+
+<script src = "ToolboxFullScriptExampleCodeJavascriptFileIncludes(1).js"></script>
+<script>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener('DOMContentLoaded', (event) =>{//
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+changeloginstatusmethod = function(){
+
+console.log("button pressed!");
+if(localStorage.getItem("builderwebsiteloggedin")          === "false"){
+  localStorage.setItem("builderwebsiteloggedin", false);
+  document.getElementById("loginbuttonheadingtop").innerHTML = "Log In";
+  window.location.href = "./LoginPageHTMLLink.html";
+  console.log("status change:"+localStorage.getItem("builderwebsiteloggedin")          )
+  
+}else{
+  document.getElementById("loginbuttonheadingtop").innerHTML = "Log In";
+  localStorage.setItem("builderwebsiteloggedin", false);
+  console.log("status change:"+localStorage.getItem("builderwebsiteloggedin")          )
+
+
+//href
+
+
+}  
+
+}
+
+
+
+
+
+
+window.messagesend  = function(){
+
+
+//Sends a message to the server then
+console.log("messagesend() called!")
+
+
+
+
+
+
+
+window.connectionsend("signup");
+
+
+
+
+
+
+}
+var fileflagtouse = 0; 
+
+
+
+
+window.connectionestablished =  function(){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log("Whoo hooo new interface connection established then!")
+
+
+
+window.newfunctiontoload = async function(){  
+
+
+
+
+let newpromisenewdeclaration = await new Promise(function(resolve,reject){  
+
+ReadFileFromPath("./../../Client Side/LayoutInflator/PaletteComponentMainFile.txt");
+fileflagtouse = 0; 
+
+resolve();
+
+});
+
+
+
+
+
+//let newpromise = await new Promise(function(resolve,reject){ 
+//
+//ReadFileFromPath("./../../Client Side/CSSStylesheets/cssstylesheet.css");
+//fileflagtouse = 1;
+//
+//resolve();
+//
+//});
+
+
+
+let newpromisenewdeclaration0         = await new Promise(function(resolve,reject){  
+
+ReadFileFromPath("./../../Client Side/bulma-0.9.1/bulma/css/bulma.css");
+fileflagtouse = 0; 
+
+resolve();
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+window.newfunctiontoload();
+
+
+}
+
+
+window.connectionmessage  =  function(valueparameters){
+
+
+
+
+
+
+
+
+
+
+
+
+if(valueparameters.split(",")[0] === "readfile" &&  valueparameters.split(",")[1]         ===  "./../../Client Side/LayoutInflator/PaletteComponentMainFile.txt"){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//console.log("valueparameters       :  "+valueparameters)
+//console.log("Some message event received here then (identifier):");
+var element = document.createElement('div');
+var filetextcompletevariable = valueparameters.split(",")[2].toString();
+
+//
+console.log("./../../Client Side/LayoutInflator/PaletteComponentMainFile.txt loaded:"  )
+console.log("final file read info listed here as follows:" +  valueparameters.split(",")[1]);
+
+//
+element.innerHTML = filetextcompletevariable.split("<!--  element definition  -->")[0];
+
+
+var element0 = document.createElement('div');
+
+element0.innerHTML = filetextcompletevariable.split("<!--  element definition  -->")[1]
+//console.log("cross converted value then:"  +  binarytostringconverter////(valueparameters.toString().split(",")[1]));
+document.body.appendChild(element);
+document.body.appendChild(element0);
+
+
+
+
+console.log(localStorage.getItem("builderwebsiteloggedin") );  
+if(localStorage.getItem("builderwebsiteloggedin") === "true" ){
+  //localStorage.setItem("builderwebsiteloggedin", false);
+  document.getElementById("loginbuttonheadingtop").innerHTML = "Log Out";
+
+}else{
+  document.getElementById("loginbuttonheadingtop").innerHTML = "Log In";
+}
+
+
+
+
+
+//
+
+
+} 
+
+if(valueparameters.split(",")[0]  ===  "readfile"  &&  valueparameters.split(",")[1] === "./../../Client Side/CSSStylesheets/cssstylesheet.css"){
+
+  var newstylesheetimplementation = document.createElement('style');
+  newstylesheetimplementation.innerHTML = valueparameters.split(",")[2].toString();
+  document.head.appendChild(newstylesheetimplementation);}
+
+
+
+//document.getElementByid("topnav").style.visibility = "hidden";
+//document.getElementByid("topnav").style.visibility = "visible";
+
+
+if(valueparameters.split(",")[0]  ===  "readfile"  &&  valueparameters.split(",")[1] === "./../../Client Side/bulma-0.9.1/bulma/css/bulma.css"){
+
+
+
+  var newstylesheetimplementation = document.createElement('style');
+  newstylesheetimplementation.innerHTML = valueparameters.split(",")[2].toString();
+  document.head.appendChild(newstylesheetimplementation);
+}/*
+
+
+*/
+
+
+}
+
+
+
+
+
+
+//}
+
+  
+
+
+window.addEventListener('DOMContentLoaded', (event) =>{
+ShowAllSelectedSlides(SelectedSlide); 
+window.receivemessagefromserver();
+
+//
+
+
+});
+
+
+     window.getMessageReceivedFromTheServerFunctionCall = function() {
+             console.log("Message Handler called and also reached!");
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+<script>
+
+//send message to server to receive css 
+
+
+//create button pressed handler that handles transition to another page 
+
+
+  //send message to the server to navigate to the next page that is 
+
+
+//create a handler for receiving a file from the actual server to ensure that the css gets
+//stored and used then 
+
+  //store the value of the received file
+
+
+  //add the actual css 
+
+
+
+</script>
+
+
+</html>
