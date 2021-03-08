@@ -17,14 +17,16 @@ overflow-x:hidden;
 overflow:hidden;
 
 
+
 }
 body {font-family: Verdana, sans-serif; margin:0
 
 position:absolute;
 
 padding:0;  margin:0;
+/*ERROR HERE THEN SOMEHOW*/
+/*overflow-y:scroll;*/
 
-overflow-y:scroll;
 
 /*background-image: url("pexels-pixabay-326311.jpg");*/
 background-repeat: repeat;
