@@ -1,0 +1,424 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box
+
+}
+body {font-family: Verdana, sans-serif; margin:0
+
+position:absolute;
+
+padding:0;  margin:0;
+
+overflow-y:scroll;
+
+/*background-image: url("pexels-pixabay-326311.jpg");*/
+background-repeat: repeat;
+background-repeat: repeat;
+background-attachment: fixed;
+background-position: center;
+background-color: white; /*EBEBEB*/ /*#f2f2f2*/
+}
+
+.container {
+    
+    position: absolute;
+    background: #eee;
+} 
+
+.footer {
+   position: absolute;
+   left: 0;
+   top:  842.0vw;
+   width: 100%;
+   height:40vw;
+   background-color:grey;
+   color: white;
+   text-align: center;
+   opacity: 0.8;
+    
+
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+ background: rgba(204, 204, 204, 0.5);
+position: absolute;
+opacity:1.0;
+font-size:1.6vw;
+
+
+  
+}
+
+.topnav a {
+  float: top;
+  color: #black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  opacity: 1;
+  left: 10vw
+  top: 80vw
+  position:absolute;
+  font-size:1.6vw; 
+  vertical-align:baseline;
+
+
+  
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+opacity: 1;
+}
+
+.topnav a.active {
+  background-color: #3366ff;
+  color: white;
+opacity: 1;
+  
+}
+
+a {
+opacity: 1;
+}
+
+/*code taken from the following website: https://www.bestcssbuttongenerator.com/*/
+
+.myButton {
+	box-shadow: 0vw 0vw 0vw 0.2vw #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:1.0vw;
+	border:0.1vw solid #4e6096;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:1.9vw;
+	padding:2.0vw 7.6vw;
+	text-decoration:none;
+	text-shadow:0vw 0.1vw 0vw #283966;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:absolute;
+	top:0.1vw;
+}
+
+.NewButton {
+
+border: 1vw solid black; 
+}
+
+.NewButton:hover{
+
+border: 1vw none black; 
+background-color:grey;
+color:white;
+
+}
+
+
+/*Code taken from the following website: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow*/ 
+
+.SlideShowSlidesObject {
+ display:none;
+ position:absolute;
+
+}
+
+.SlidesShowContainerObject {
+
+max-width:80vw;
+width:98.80vw;
+height:40vw;
+position: absolute; 
+margin:auto;
+position:absolute;
+
+}
+
+.NextButtonMovementArrows,.PreviousButtonMovementArrows{
+
+cursor:pointer; 
+position:absolute; 
+top:50%;
+width:auto;
+padding:1.6vw;
+margin-top: -2vw; 
+color:white;
+font-weight: bold;
+font-size: 1.8vw; 
+transition: 0.6s ease; 
+border-radius: 0 0.3vw 0.3vw 0; 
+user- selected:none;
+
+
+
+}
+
+.NextButtonMovementArrows {
+
+right: 0;
+border-radius:3vw 0 0 3vw;
+position:absolute;
+
+
+}
+
+.PreviousButtonMovementArrows:hover , .NextButtonMovementArrows:hover {
+
+background-color:rgba(0,0,0,0.8); 
+
+} 
+
+
+.TextElementSlideShow  {
+colour: #ffffff
+font-size:1.2 vw; 
+padding: 0.8vw 1.2vw;
+position:absolute;
+top:0;
+} 
+
+
+.NumberTextSlideShow {
+
+color: #ffffff
+font-size:1.2vw;
+padding:0.8vw 1.2vw;
+position:absolute;
+top:0;
+}
+
+.SlideShowDotElement {
+cursor:pointer;
+height:15vw;
+width:15vw;
+margin 0 0.2vw 
+background-color: #bbb;
+border-radius:50%;
+display:inline-block;
+transition:background-color 0.6s ease:
+position:absolute;
+
+}
+
+.SlideShowActiveElement, .SlideShowDotElement:hover {
+
+
+background-color: #000000 
+}
+
+.slideshowelementfade {
+ -webkit-animation-name: slideshowelementfade;
+ -webkit-animation-duration: 1.5s;
+ animation-name: slideshowelementfade;
+ animation-duration:1.5s; 
+
+}
+
+@-webkit-keyframes slideshowelementfade{
+
+  from {opacity: 0.8}
+  to {opacity: 1}
+ 
+}
+
+@keyframes slideshowelementfade{
+  from {opacity: 0.8}
+  to  {opacity: 1}
+
+}
+
+
+
+* {box-sizing: border-box}
+
+body{
+font-family:Verdan,sans-serif; margin:0;
+scrollbar-width:0.2vw;
+}
+/*Code taken from the following website: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow*/ 
+
+.SlideShowSlidesObject {
+ display:none;
+ 
+ position:absolute; /* own lines added to make it function then */
+ width: 80vw;        /* own lines added to make it function then */
+ height:40vw;        /* own lines added to make it function */
+
+
+
+}
+
+
+img {
+
+vertical-align: middle;
+top:0vw;  /* own lines added to make it function then */
+left:0vw;  /* own lines added to make it function then */
+width:120vw;  /* own lines added to make it function then */
+height:80vw;  /* own lines added to make it function then */
+position:absolute;  /* own lines added to make it function then */ /**/
+}
+
+
+.SlidesShowContainerObject {
+
+max-width:100vw; 
+width:120vw; 
+height:80vw;
+position: absolute; /*position:relative*/
+margin:auto;  /**/
+background-color:blue;
+position:absolute;
+
+}
+
+.NextButtonMovementArrows,.PreviousButtonMovementArrows{
+
+cursor:pointer; 
+position:absolute; 
+top:20vw;
+width:auto;
+padding:1.6vw;
+margin-top: -2.2vw; 
+color:white;
+font-weight: bold;
+font-size: 1.8vw; 
+transition: 0.6s ease; 
+border-radius: 0 0.3vw 0.3vw 0; 
+user-selected:none;
+
+
+
+
+
+}
+
+.NextButtonMovementArrows {
+
+right: 0;
+border-radius:0.3vw 0 0 0.3vw;
+position: absolute; /* own lines added to make it function then */
+position:absolute;
+
+
+}
+
+.PreviousButtonMovementArrows:hover , .NextButtonMovementArrows:hover {
+
+background-color:rgba(0,0,0,0.8); 
+
+} 
+
+
+.TextElementSlideShow  {
+colour: #ffffff 
+font-size:1.2 vw; 
+padding: 0.8vw 1.2vw;
+position:absolute;
+bottom:8vw; 
+top:0; /* own line added to make it function then */
+position:absolute; /* own line added to make it function then */ 
+width: 100%;
+text-align:center;
+
+} 
+
+
+.NumberTextSlideShow {
+
+color: #ffffff
+font-size:1.2vw;
+padding:0.8vw 1.2vw;
+position: absolute;
+top:0;
+}
+
+.SlideShowDotElement {
+cursor:pointer;
+height:1.5vw;
+width:1.5vw;
+margin: 0 0.2vw; 
+background-color: #bbb;
+border-radius:50%;
+display: inline-block;
+transition:background-color 0.6s ease;
+/*left: -80.0:vw; */  /* own line added to make it function then*/
+/*top:16vw;  */  /* own line added to make it function then  */
+position:absolute; /*relative*/ /*  own line added to make it function then */
+
+
+}
+
+.SlideShowActiveElement, .SlideShowDotElement:hover {
+
+
+background-color: grey; 
+/*left: 4.8:vw;*/ /* own line added to make it function then*/
+/*top:16.0vw;*/  /* own line added to make it function then  */
+position: absolute; /*relative*/ /*  own line added to make it function then */
+height:1.5vw;
+width:1.5vw;
+margin: 0 0.2vw; 
+display: inline-block;
+border-radius:50%;
+
+}
+
+.slideshowelementfade {
+ -webkit-animation-name: slideshowelementfade;
+ -webkit-animation-duration: 1.5s;
+ animation-name: slideshowelementfade;
+ animation-duration: 1.5s; 
+
+}
+
+@-webkit-keyframes slideshowelementfade {
+
+  from {opacity: 0.8}
+  to {opacity: 1.0}
+ 
+}
+
+@keyframes slideshowelementfade {
+  from {opacity: 0.8}
+  to  {opacity: 1.0}
+
+}
+
+@media only screen and (max-width:300vw;){
+.PreviousButtonMovementArrows, .NextButtonMovementArrows, .TextElementSlideShow {font-size:11vw};
+}
+
+
+.fullvisible {
+
+ opacity: 1.0 ;font-size: 1.0vw;
+
+}
+
+
