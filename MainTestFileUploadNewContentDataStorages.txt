@@ -1,5 +1,5 @@
 
-<html>
+
 <head>
 <!--THERE COULD BE A LOT OF ERRORS HERE THEN!-->
 <!--<link rel="stylesheet" type="text/css"  href="./bulma-0.9.1/bulma/css/bulma.css">-->
@@ -965,4 +965,3 @@ window.receivemessagefromserver();
 </script>
 
 
-</html>
