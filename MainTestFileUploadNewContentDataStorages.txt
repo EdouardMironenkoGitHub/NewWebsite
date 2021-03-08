@@ -1,6 +1,6 @@
 
 
-<head>
+<!--<head>-->
 <!--THERE COULD BE A LOT OF ERRORS HERE THEN!-->
 <!--<link rel="stylesheet" type="text/css"  href="./bulma-0.9.1/bulma/css/bulma.css">-->
 <!--<link rel = "stylesheet"  type = "text/css"  href = "./CSSStylesheets/cssstylesheet.css">-->
@@ -8,7 +8,7 @@
 
 <!--<link rel=  "preload"  href="./LayoutInflator/PaletteComponentMainFile.txt" as="object"></link> -->
 
-<style></style>
+<!--<style></style>-->
 
 
 <script>
@@ -71,7 +71,7 @@ console.log("iteration performed!");
 
 
  
-</head>
+<!--</head>--> <!---->
 
 <!-- code taken from the following website and modified if any copyright issues arise please email edouard.mironenko@gmail.com -->
 
